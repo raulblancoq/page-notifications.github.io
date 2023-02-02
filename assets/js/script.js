@@ -6,7 +6,7 @@ document.querySelector('.count').textContent = count;
 btnMark.addEventListener('click', function markUnread(e){
     e.preventDefault();
     for (const element of comments) {
-        element.classList.toggle('unread');
+        element.classList.remove('unread');
     }
     var count = document.querySelectorAll('.unread').length;
     document.querySelector('.count').textContent = count;
